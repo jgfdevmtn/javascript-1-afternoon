@@ -19,6 +19,9 @@ var name = 'Tyler';
 
 //Code Here
 
+let isTyler = (name) => name === 'Tyler';
+
+
 
 
 ////////// PROBLEM 2 //////////
@@ -29,7 +32,7 @@ var name = 'Tyler';
 
 //Code Here
 
-
+let getName = () => prompt("Enter your name: ") 
 
 ////////// PROBLEM 3 //////////
 
@@ -52,7 +55,7 @@ var name = 'Tyler';
 
 //Answer Here
 
-
+arguments are what is passed in, parameters are the names of those args in the function
 
 ////////// PROBLEM 5 //////////
 
@@ -62,7 +65,7 @@ var name = 'Tyler';
 
 //Answer Here
 
-
+false, 0, -0, "", '', null, undefined, NaN, document.all
 
 ////////// PROBLEM 6 //////////
 
@@ -71,7 +74,8 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+
+let myName = () => 'John';
 
 
 /*
@@ -80,7 +84,7 @@ var name = 'Tyler';
 
 //Code Here
 
-
+const newMyName = myName();
 
 /*
   Now alert the result of invoking newMyName
@@ -88,7 +92,7 @@ var name = 'Tyler';
 
 // Code Here
 
-
+alert(newMyName)
 
 ////////// PROBLEM 7 //////////
 
@@ -98,18 +102,17 @@ var name = 'Tyler';
 
 //Code Here
 
-
-
+let outerFn = () => ()=>'John';
 /*
   Now save the result of invoking outerFn into a variable called innerFn.
 */
 
 //Code Here
 
-
+let innerFn = outerFn();
 
 /* 
   Now invoke innerFn.
 */
 
-// Code Here
+innerFn()
